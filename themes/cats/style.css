@@ -421,7 +421,12 @@ ul,li{
         font-size: 16px;
     }
     .home_block4_img_word{
-        font-size: 22px;
+        font-size: 18px;
+        bottom: auto;
+    }
+    .home_block4 .swiper-container{
+        
+        height: 260px;
     }
     .pagination{
         width: 100%;
