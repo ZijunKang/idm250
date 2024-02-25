@@ -1,0 +1,460 @@
+/*
+Theme Name: Cats
+Description: Cats
+Author: K
+Version: 1.0
+*/
+body{
+    background: #ffffff;
+    padding: 0;
+    margin: 0;
+    font-family: "Irish";
+}
+button{
+    font-family: "Irish";
+}
+@font-face {
+    font-family: "Irish";
+    src: url("./assets/fonts/Irish\ Grover.woff2.ttf");
+}
+@font-face {
+    font-family: "JosefinSlab";
+    src: url("./assets/fonts/JosefinSlab-Regular.ttf");
+}
+.JosefinSlab{
+    font-family: "JosefinSlab";
+}
+a{
+    text-decoration: none;
+    color:#000;
+    transition: all 0.3s ease;
+}
+.ai_c{
+    align-items: center;
+}
+.ai_b{
+    align-items: baseline;
+}
+.jc_c{
+    justify-content: center;
+}
+.jc_a{
+    justify-content: space-around;
+}
+.jc_b{
+    justify-content: space-between;
+}
+.flex_direction_c{
+    flex-direction: column;
+}
+.flex{
+    display: flex;
+}
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.layout{
+    width: 1200px;
+    margin: 0 auto;
+}
+.logo{
+    width: 98px;
+    height: 98px;
+}
+
+.nav_ul li a{
+    font-size:26px;
+    font-weight: 400;
+
+}
+.nav_ul li a:hover{
+    color:#ACD9F9
+}
+.current-menu-item a{
+    color:#ACD9F9
+    
+}
+.menu_btn{
+    width: 30px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.nav_ul{
+    width: 600px;
+    justify-content: space-between;
+}
+.header{
+    width:100%;display:flex;align-items:baseline;justify-content:space-between;
+    margin-top:15px;
+    position: relative;
+}
+.header_icons_group{
+    margin-left:60px;
+    width: 155px;
+    justify-content: space-between;
+    justify-items: baseline;
+}
+
+.header_icons_group img{
+    width: 30px;
+    height: 30px;
+    display: flex;
+}
+.nav{
+    padding-bottom:5px
+}
+.search_icon img{
+    width: 30px;
+    height: 30px;
+    margin-left:50px;
+    cursor: pointer;
+}
+.cat_btn{
+    width: 327px;
+    height: 65px;
+    background: #46A4E6;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    color:#000;
+    cursor: pointer;
+}
+.banner_right{
+    align-items: center;
+    display: flex;
+}
+.banner_right img{
+    width: 479px;
+    height: 479px;
+
+}
+
+.home_page {
+    width: 1100px;
+    padding:90px 0px 0px
+}
+.home_block1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.banner_left{
+    margin-top:40px;text-align:center;display:flex;flex-direction:column;align-items:center
+}
+.banner_left_line1{
+    max-width:490px;
+}
+.banner_left_line2{
+    max-width:360px;
+}
+.banner_left_line1_title1{
+    font-size:68px;letter-spacing:10px
+}
+.banner_left_line1_title2{
+    font-size:35px
+}
+.banner_left_line2{
+    margin-top:80px;font-size:24px;text-align:justify
+}
+.banner_left_btn{
+    margin-top:50px;
+}
+
+.home_block3{
+    margin-top: 120px;
+    display: flex;
+    gap: 80px;
+    padding:0px yspx
+}
+.home_block3 .block1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:20px
+}
+.home_block3 .block1 .row1 img{
+    width: 546px;
+    height: 282px;
+}
+.home_block3 .block1 .row2{
+    font-size: 36px;
+    margin-top: 30px;
+}
+.home_block3 .block1 .row3{
+    margin-top: 30px;
+}
+.home_block3 .block2{
+    font-size: 24px;
+    line-height: 27px;
+    letter-spacing:1.6px
+}
+.home_block4{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.home_block4 .swpier_item{
+    position:relative
+}
+.home_block4 .swiper-container{
+    width: 570px;
+    height: 336px;
+}
+.pagination {
+    
+    /* width: 100%; */
+  }
+  .swiper-pagination-switch {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    border-radius: 17px;
+    background: #ACD9F9;
+    margin: 15px 6px 0px;
+    cursor: pointer;
+  }
+  .swiper-active-switch {
+    background: #46A4E6;
+  }
+  
+.home_block4_img_word{
+    position:absolute;
+    padding:20px 15px;
+    font-size:24px;
+    width: 100%;
+    bottom: 0px;
+    background:#FFFFFFB2
+}
+#footer{
+    width:100%;height:70px;background:#000000;line-height:70px;text-align:center;
+    color:white;font-size: 22px;
+}
+.home_block2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 120px;
+}
+.home_block2 img{
+    width: 236px;
+}
+.home_block2_item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.home_block2_item{
+    font-size: 22px;
+}
+.home_block4{
+    margin-top:120px;
+}
+.home_block3 .block1 .row1{
+
+}
+.home_block4 .swpier_item img{
+    width:570px;
+    height: auto;
+}
+.home_block4 .block2{
+    margin-top: 15px;
+}
+.footer_contact{
+    padding:0px 30px
+}
+.contact_title{
+    margin-top: 50px;
+}
+.contact_block{
+    display: flex;
+    padding:0px 0px 50px;
+    font-size: 22px;
+}
+.contact_block .block1{
+    padding:0px 60px 60px 30px;
+}
+.contact_block .block1 .block1_info{
+    margin-top:60px
+}
+.contact_block input{
+    width:327px;
+    font-size: 22px;
+    font-family: "Irish";
+    padding: 8px 12px;
+    box-sizing: border-box;
+}
+.contact_block textarea{
+    width:543px;
+    font-size: 22px;
+    font-family: "Irish";
+    padding: 8px 12px;
+    box-sizing: border-box;
+    height: 163px;
+    resize: none;
+}
+.contact_block .form-group{
+    margin-top:30px
+}
+.footer_logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.footer_logo img{
+    width: 98px;
+    height: 98px;
+}
+.footer_nav{
+    margin-top:30px;
+    margin-bottom:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.show{
+    display: block !important;
+}
+.phone{
+    display: none;
+}
+.page_404_block{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page_404_block img{
+    width: 193px;
+    display: flex;
+}
+.page_404_block .block2 .row1{
+    font-size: 146px;
+}
+.page_404_block .block2 .row2{
+    font-size: 40px;
+}
+.page_404_layout{
+    display:flex;flex-direction:column;align-items:center;margin-top:40px
+}
+.page_404_btn{
+    margin-top:50px
+}
+@media screen and (max-width: 750px) {
+    body{
+        box-sizing: border-box;
+        overflow-x: hidden !important;
+    }
+    .pc{
+        display: none;
+    }
+    .phone{
+        display: block;
+    }
+    
+    .layout{
+        gap: 0;
+        width:100%;
+    }
+    .home_block{
+        flex-flow:row wrap;
+        align-content: flex-start;
+        min-width: 100%;
+    }
+    
+    .contact_block{
+        flex-flow:row wrap;
+        align-content: flex-start;
+        min-width: 100%;
+    }
+    .header_icons_group{
+        margin-left:20px
+    }
+    .menu_list{
+        position: absolute;
+        top:140px;
+        width: 100%;
+        background: white;
+        box-sizing: border-box;
+        border-bottom: 1px solid #000;
+        display: none;
+    }
+    .menu_list li{
+        padding: 15px;
+        font-size: 24px;
+    }
+    .home_block .block_item{
+        padding:15px 15px
+    }
+    .home_block img{
+        width: 100% !important;
+        height: auto !important;
+    }
+    .banner_left_line1_title1{
+        font-size: 40px;
+    }
+    .banner_left_line1_title2{
+        font-size: 22px;
+    }
+    .banner_left_line2{
+        margin-top: 22px;
+    }
+    .home_page{
+        padding:30px 15px;
+        box-sizing: border-box;
+    }
+    .home_block{
+        margin-top:60px
+    }
+    .home_block:first-child{
+        margin-top:0px
+    }
+    .home_block3{
+        gap:15px
+    }
+    .home_block3 .block2{
+        font-size: 16px;
+    }
+    .home_block4_img_word{
+        font-size: 22px;
+    }
+    .pagination{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact_item textarea{
+        width: 327px;
+    }
+    
+    .search_icon img{
+        margin-left: 0px;
+    }
+    .page_404_block{
+        flex-flow:column wrap;
+        min-width: 100%;
+        align-content: center;
+    }
+    .page_404_block img{
+        width: 130px;
+    }
+    .page_404_block .block2 .row1 {
+        text-align: center;
+        font-size: 96px;
+        margin-top: 30px;
+    }
+    .page_404_block .block2 .row2 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .page_404_btn{
+        width: 280px;
+        font-size: 18px;
+    }
+}
