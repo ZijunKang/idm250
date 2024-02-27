@@ -121,6 +121,11 @@ ul,li{
     outline: none;
     color:#000;
     cursor: pointer;
+transition:all 0.3s ease
+}
+.cat_btn:hover{
+background: #ACD9F9;
+color:white	
 }
 .banner_right{
     align-items: center;
