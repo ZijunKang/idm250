@@ -1,0 +1,238 @@
+.home_page {
+    width: 1100px;
+    padding:90px 0px 0px
+}
+.banner_right{
+    align-items: center;
+    display: flex;
+}
+.banner_right img{
+    width: 479px;
+    height: 479px;
+
+}
+.home_block1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.banner_left{
+    margin-top:40px;text-align:center;display:flex;flex-direction:column;align-items:center
+}
+.banner_left_line1{
+    max-width:490px;
+}
+.banner_left_line2{
+    max-width:360px;
+}
+.banner_left_line1_title1{
+    font-size:68px;letter-spacing:10px
+}
+.banner_left_line1_title2{
+    font-size:35px
+}
+.banner_left_line2{
+    margin-top:80px;font-size:24px;text-align:justify
+}
+.banner_left_btn{
+    margin-top:50px;
+}
+
+.home_block3{
+    margin-top: 120px;
+    display: flex;
+    gap: 80px;
+    padding:0px yspx
+}
+.home_block3 .block1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:20px
+}
+.home_block3 .block1 .row1 img{
+    width: 546px;
+    height: 282px;
+}
+.home_block3 .block1 .row2{
+    font-size: 36px;
+    margin-top: 30px;
+}
+.home_block3 .block1 .row3{
+    margin-top: 30px;
+}
+.home_block3 .block2{
+    font-size: 24px;
+    line-height: 27px;
+    letter-spacing:1.6px
+}
+.home_block4{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom:30px;
+}
+.home_block4 .swpier_item{
+    position:relative
+}
+.home_block4 .swiper-container{
+    width: 570px;
+    height: 336px;
+}
+.pagination {
+    
+    /* width: 100%; */
+  }
+  .swiper-pagination-switch {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    border-radius: 17px;
+    background: #ACD9F9;
+    margin: 15px 6px 0px;
+    cursor: pointer;
+  }
+  .swiper-active-switch {
+    background: #46A4E6;
+  }
+  
+.home_block4_img_word{
+    position:absolute;
+    padding:20px 15px;
+    font-size:24px;
+    width: 100%;
+    bottom: 0px;
+    background:#FFFFFFB2
+}
+#footer{
+    width:100%;height:70px;background:#000000;line-height:70px;text-align:center;
+    color:white;font-size: 22px;
+}
+.home_block2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 120px;
+}
+.home_block2 img{
+    width: 236px;
+}
+.home_block2_item{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.home_block2_item{
+    font-size: 22px;
+}
+.home_block4{
+    margin-top:120px;
+}
+.home_block3 .block1 .row1{
+
+}
+.home_block4 .swpier_item img{
+    width:570px;
+    height: auto;
+}
+.home_block4 .block2{
+    margin-top: 15px;
+}
+
+
+@media screen and (max-width: 750px) {
+    body{
+        box-sizing: border-box;
+        overflow-x: hidden !important;
+    }
+    .pc{
+        display: none;
+    }
+    .phone{
+        display: block;
+    }
+    
+    .layout{
+        gap: 0;
+        width:100%;
+    }
+    .home_block{
+        flex-flow:row wrap;
+        align-content: flex-start;
+        min-width: 100%;
+    }
+    
+    .contact_block{
+        flex-flow:row wrap;
+        align-content: flex-start;
+        min-width: 100%;
+    }
+    .header_icons_group{
+        margin-left:20px
+    }
+    .menu_list{
+        position: absolute;
+        top:140px;
+        width: 100%;
+        background: white;
+        box-sizing: border-box;
+        border-bottom: 1px solid #000;
+        display: none;
+    }
+    .menu_list li{
+        padding: 15px;
+        font-size: 24px;
+    }
+    .home_block .block_item{
+        padding:15px 15px
+    }
+    .home_block img{
+        width: 100% !important;
+        height: auto !important;
+    }
+    .banner_left_line1_title1{
+        font-size: 40px;
+    }
+    .banner_left_line1_title2{
+        font-size: 22px;
+    }
+    .banner_left_line2{
+        margin-top: 22px;
+    }
+    .home_page{
+        padding:30px 15px;
+        box-sizing: border-box;
+    }
+    .home_block{
+        margin-top:60px
+    }
+    .home_block:first-child{
+        margin-top:0px
+    }
+    .home_block3{
+        gap:15px
+    }
+    .home_block3 .block2{
+        font-size: 16px;
+    }
+    .home_block4_img_word{
+        font-size: 18px;
+        bottom: auto;
+    }
+    .home_block4 .swiper-container{
+        
+        height: 260px;
+    }
+    .pagination{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .search_icon img{
+        margin-left: 0px;
+    }
+    
+}

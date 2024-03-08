@@ -1,0 +1,331 @@
+/*
+Theme Name: Cats
+Description: Cats
+Author: K
+Version: 1.0
+*/
+body{
+    background: #ffffff;
+    padding: 0;
+    margin: 0;
+    font-family: "Irish" !important;
+}
+button{
+    font-family: "Irish" !important;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Irish";
+}
+@font-face {
+    font-family: "Irish";
+    src: url("./assets/fonts/Irish\ Grover.woff2.ttf");
+}
+@font-face {
+    font-family: "JosefinSlab";
+    src: url("./assets/fonts/JosefinSlab-Regular.ttf");
+}
+.searchForm{
+    display:none;position:relative;text-align: center;
+}
+.searchForm input{
+    display:inline-block;text-align:center;margin:60px 0px;width:900px;outline:none;color:#46A4E6;border-radius:50px;padding:20px 10px;font-size:28px;box-sizing:border-box;border:1px solid #46A4E6
+}
+#searchsubmit{
+    display: none;
+}
+.JosefinSlab{
+    font-family: "JosefinSlab" !important;
+}
+
+a{
+    text-decoration: none !important;
+    color:#000 !important;
+    transition: all 0.3s ease !important;
+}
+.ai_c{
+    align-items: center;
+}
+.ai_b{
+    align-items: baseline;
+}
+.jc_c{
+    justify-content: center;
+}
+.jc_a{
+    justify-content: space-around;
+}
+.jc_b{
+    justify-content: space-between;
+}
+.flex_direction_c{
+    flex-direction: column;
+}
+.flex{
+    display: flex;
+}
+.header>ul{
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.header li{
+    list-style: none !important;
+    margin: 0;
+    padding: 0;
+}
+.layout{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.logo{
+    width: 98px;
+    height: 98px;
+}
+
+.nav_ul li a{
+    font-size:26px;
+    font-weight: 400;
+
+}
+.nav_ul li a:hover{
+    color:#ACD9F9 !important
+}
+.current-menu-item a{
+    color:#ACD9F9 !important
+    
+}
+.menu_btn{
+    width: 30px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.nav_ul{
+    width: 600px;
+    justify-content: space-between;
+}
+.header{
+    width:100%;display:flex;align-items:baseline;justify-content:space-between;
+    margin-top:15px;
+    position: relative;
+}
+.header_icons_group{
+    margin-left:60px;
+    width: 155px;
+    justify-content: space-between;
+    justify-items: baseline;
+}
+
+.header_icons_group img{
+    width: 30px;
+    height: 30px;
+    display: flex;
+}
+.nav{
+    padding-bottom:5px
+}
+.search_icon img{
+    width: 30px;
+    height: 30px;
+    margin-left:50px;
+    cursor: pointer;
+}
+.cat_btn{
+    width: 327px;
+    height: 65px;
+    background: #46A4E6;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    color:#000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.cat_btn:hover{
+    background: #ACD9F9;
+    color:white
+}
+
+#footer{
+    width:100%;height:70px;background:#000000;line-height:70px;text-align:center;
+    color:white;font-size: 22px;
+}
+.footer_contact{
+    padding:0px 30px
+}
+.contact_title{
+    margin-top: 50px;
+}
+.contact_block{
+    display: flex;
+    padding:0px 0px 50px;
+    font-size: 22px;
+}
+.contact_block .block1{
+    padding:0px 60px 60px 30px;
+}
+.contact_block .block1 .block1_info{
+    margin-top:60px
+}
+.contact_block input{
+    width:327px;
+    font-size: 22px;
+    font-family: "Irish";
+    padding: 8px 12px;
+    box-sizing: border-box;
+}
+.contact_block textarea{
+    width:543px;
+    font-size: 22px;
+    font-family: "Irish";
+    padding: 8px 12px;
+    box-sizing: border-box;
+    height: 163px;
+    resize: none;
+}
+.contact_block .form-group{
+    margin-top:30px
+}
+.footer_logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.footer_logo img{
+    width: 98px;
+    height: 98px;
+}
+.footer_nav{
+    margin-top:30px;
+    margin-bottom:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_nav li{
+    list-style: none !important;
+    margin: 0;
+    padding: 0;
+}
+.footer_send{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom:60px
+}
+.show{
+    display: block !important;
+}
+.phone{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 750px) {
+    body{
+        box-sizing: border-box;
+        overflow-x: hidden !important;
+    }
+    .pc{
+        display: none;
+    }
+    .phone{
+        display: block;
+    }
+    
+    .layout{
+        gap: 0;
+        width:100%;
+    }
+    
+    
+    .contact_block{
+        flex-flow:row wrap;
+        align-content: flex-start;
+        min-width: 100%;
+    }
+    .header_icons_group{
+        margin-left:20px
+    }
+    .menu_list{
+        position: absolute;
+        top:140px;
+        width: 100%;
+        background: white;
+        box-sizing: border-box;
+        border-bottom: 1px solid #000;
+        display: none;
+    }
+    .menu_list li{
+        padding: 15px;
+        font-size: 24px;
+    }
+    .home_block .block_item{
+        padding:15px 15px
+    }
+    .home_block img{
+        width: 100% !important;
+        height: auto !important;
+    }
+    .banner_left_line1_title1{
+        font-size: 40px;
+    }
+    .banner_left_line1_title2{
+        font-size: 22px;
+    }
+    .banner_left_line2{
+        margin-top: 22px;
+    }
+    .home_page{
+        padding:30px 15px;
+        box-sizing: border-box;
+    }
+    .home_block{
+        margin-top:60px
+    }
+    .home_block:first-child{
+        margin-top:0px
+    }
+    .home_block3{
+        gap:15px
+    }
+    .home_block3 .block2{
+        font-size: 16px;
+    }
+    .home_block4_img_word{
+        font-size: 18px;
+        bottom: auto;
+    }
+    .home_block4 .swiper-container{
+        
+        height: 260px;
+    }
+    .pagination{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact_item textarea{
+        width: 327px;
+    }
+    
+    .search_icon img{
+        margin-left: 0px;
+    }
+    .contact_item textarea{
+        width: 327px;
+    }
+    .footer_nav .nav_ul{
+        display: block;
+    }
+    .footer_nav .nav_ul{
+        width: auto;
+    }
+}
+
+
+
