@@ -36,6 +36,10 @@ function ms1_scripts(){
   if(is_page('blog')){
     wp_enqueue_style( 'blog',get_template_directory_uri().'/assets/css/blog.css',array());
   }
+   // Blog page
+   if($type == "post"){
+    wp_enqueue_style( 'blog',get_template_directory_uri().'/assets/css/blog.css',array());
+  }
 
   // default templete & out-cat page
   if(is_page('our-cats')){
