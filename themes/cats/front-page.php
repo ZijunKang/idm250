@@ -4,8 +4,6 @@
 <?php
 get_header();
 ?>
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/front-page.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/idangerous.swiper.css">
 <!-- Home Page
 ==========================================-->
 <div class="layout home_page">
@@ -106,7 +104,7 @@ You are in the right place.</div>
 
 
   </script>
-<?php
+    <?php
 get_footer();
 
 ?>
