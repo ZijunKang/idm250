@@ -1,102 +1,22 @@
 <?php
-/*Template Name: Blog Template*/
-?>
-<?php
 get_header();
 ?>
 <!-- Post Archive Page
 ==========================================-->
-<style>
-  .blog{
-    display:flex;
-    justify-content:flex-start;
-    gap:4%;
-    padding-top:60px;
-    padding-bottom:60px;
-  }
-  .blog_main_content{
-    flex:5
-  }
-  .blog_sidebar{
-    flex:1
-  }
-  .blog_list_item{
-    width:100%;
-    border:1px solid #000;
-    display:flex;
-  }
-
-  .blog_list_item_info{
-    box-sizing:border-box;
-    padding:15px
-  }
-  .blog_list_item_top img{
-    width: 40px;
-    height:40px;
-    border-radius:100%;
-    margin-right:10px
-  }
-  .blog_list_item_top{
-    display:flex;
-    align-items:center
-  }
-  .blog_title a{
-    font-size:36px
-  }
-  .blog_list_item_img img{
-    width:100%;
-    height:100%;
-    
-  }
-  .blog_list_item{
-    margin-bottom:30px
-  }
-  .blog_list_item_img{
-    flex:1
-  }
-  .blog_list_item_info{
-    flex:1
-  }
-  .blog_link{
-    display:flex;
-    justify-content:flex-end    
-  }
-  .blog_list_item_bottom{
-    display:flex;
-    justify-content:space-between;
-    margin-top:20px
-  }
-  .blog_list_item_icons img{
-    width:22px;
-    height:auto;
-  }
-  .blog_list_item_icons{
-    display:flex;
-    align-items:center;
-    gap:10px
-  }
-  .blog_btn{
-    width:100%;
-    display:flex;
-    justify-content:center;
-    margin:20px;
-  }
-</style>
 <div class="layout">
 <h1>
         Key: <?php echo get_search_query()?>
     </h1>
-  <div class="blog block">
+  <div class="bloglist block">
     <div class="blog_main_content block_item">
      
 
       <?php
-$args = array('post_type' => 'post', 'posts_per_page' => 10);
-$loop = new WP_Query($args);
+
 ?>
 	        <div class="blog_list">
 
-    <?php while ($loop->have_posts()): $loop->the_post(); ?>
+    <?php while (have_posts()): the_post(); ?>
     <div class="blog_list_item">
         <div class="blog_list_item_img">
           <?php if (has_post_thumbnail()) {the_post_thumbnail();}else{echo '<img src="'.get_template_directory_uri().'/assets/images/home/05.png">';} ?>

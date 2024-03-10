@@ -1,9 +1,9 @@
 .bloglist{
     display:flex;
     justify-content:flex-start;
-    gap:4%;
     padding-top:60px;
     padding-bottom:60px;
+    gap:2%
   }
   .blog_main_content{
     flex:5
@@ -71,4 +71,16 @@
     display:flex;
     justify-content:center;
     margin:20px;
+  }
+  @media screen and (max-width: 750px) {
+    .bloglist{
+      display: block;
+    }
+    .layout{
+      padding:0px 15px;
+      box-sizing: border-box;
+    }
+    .blog_list_item{
+      display: block;
+    }
   }

@@ -7,13 +7,15 @@
     <title><?php bloginfo('name'); ?><?php wp_title(); ?></title>
     <!-- Dynamic title tags -->
 
+    <!-- Include favicon into the <head> -->
+    <link rel="icon" href="<?php echo get_field('favicon_img','option');?>" sizes="32x32">
+    <!-- Include favicon into the <head> -->
+      
     <!-- Include wp_head() -->
     <?php wp_head(); ?>
     <!-- Include wp_head() -->
 
-    <!-- Include favicon into the <head> -->
-    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/icons/favicon.png">
-    <!-- Include favicon into the <head> -->
+   
 
 </head>
 <!-- Footer component 
@@ -26,7 +28,7 @@
         <div class="layout">
             <div class="header" style="">
               <div class="header_left flex ai_b">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" class="logo" alt="">
+                <img src="<?php echo get_field('logo','option');?>" class="logo" alt="">
                 <div class="flex header_icons_group">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/01.png" alt="">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/02.png" alt="">

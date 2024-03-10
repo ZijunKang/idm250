@@ -27,7 +27,7 @@ body .cats_single{
 .cat_list_item{
     width: 45%;
     box-sizing: border-box;
-    padding: 150px 0px 8px; 
+    margin: 150px 0px 8px; 
     border-bottom: 1px dashed #000000;
     display: block;
 }
@@ -82,6 +82,8 @@ body .cats_single{
 .cats_list_menu{
     margin-top:90px;
     display:flex;justify-content:space-between;align-items:center;
+    position: relative;
+    z-index: 99;
 }
 .cat_type img{
     width: 17px;

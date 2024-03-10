@@ -10,9 +10,9 @@
 	<div class="contact_title" style="font-size:40px">Contact Us</div>
 	<div class="contact_block ">
 		<div class="block1 contact_item block_item">
-			<div class="block1_info">Kimberly</div>
-			<div class="block1_info">kimber@gmail.com</div>
-			<div class="block1_info">860-XXX-XXXX</div>
+			<div class="block1_info"><?php echo get_field('footer_author','option');?></div>
+			<div class="block1_info"><?php echo get_field('footer_email','option');?></div>
+			<div class="block1_info"><?php echo get_field('footer_phone','option');?></div>
 		</div>
 		<div class="block2 contact_item block_item">
 			<div class="form-group">
@@ -37,7 +37,7 @@
   </div>
 </div>
 <div class="footer_logo">
-  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="">
+  <img src="<?php echo get_field('logo','option');?>" alt="">
 </div>
 <div class="footer_nav">
 <?php
@@ -51,7 +51,7 @@ echo wp_nav_menu(array(
 ?>
 </div>
 <footer id="footer">
-<p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> by Zijun</p>
+<p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> <?php echo get_field('footer_text','option');?></p>
     </footer>
 	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/main.js">	</script>
 </body>

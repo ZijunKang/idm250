@@ -11,11 +11,12 @@
 <div class="layout page_404_layout" style="">
     <div class="page_404_block">
         <div class="block1 block_item">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/404/logo.png" alt="">
+            <img src="<?php echo get_field('404_img','option');?>" alt="">
         </div>
+       
         <div class="block2 block_item">
-            <div class="row1">404</div>
-            <div class="row2">Page Not Found</div>
+            <div class="row1"><?php echo get_field('title1','option');?></div>
+            <div class="row2"><?php echo get_field('title2','option');?></div>
         </div>
 
     </div>

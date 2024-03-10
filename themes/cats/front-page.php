@@ -3,50 +3,44 @@
 ?>
 <?php
 get_header();
+
 ?>
 <!-- Home Page
 ==========================================-->
 <div class="layout home_page">
 	<div class="home_block1 home_block">
 		<div class="banner_left block_item" style="">
-			<div class="banner_left_line1" style=""><span class="banner_left_line1_title1">DreamPurr</span>
-			<br><span class="banner_left_line1_title2" >Purring Dreams into Reality</span></div>
-			<div class="JosefinSlab banner_left_line2">Welcome to DreamPurr, where we lovingly craft the perfect blend of affection and elegance in every Ragdoll kitten.</div>
-			<div style=""><button class="cat_btn banner_left_btn" >Our Cats</button></div>
+			<div class="banner_left_line1" style=""><span class="banner_left_line1_title1"><?php echo get_field('banner_title1');?></span>
+			<br><span class="banner_left_line1_title2" ><?php echo get_field('banner_title2');?></span></div>
+			<div class="JosefinSlab banner_left_line2"><?php echo get_field('banner_des');?></div>
+			<div style=""><a href="<?php echo home_url().'/index.php/our-cats'?>"><button class="cat_btn banner_left_btn" >Our Cats</button></a></div>
 		</div>
 		<div class="banner_right">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/04.png" alt="">
+			<img src="<?php echo get_field('banner_img');?>" alt="">
 		</div>
 	</div>
 	<!-- block2 -->
 	<div class="home_block2 home_block">
-		<div class="home_block2_item block_item">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/01.png" alt="">
-			<p>Chasing high</p>
-		</div>
-		<div class="home_block2_item block_item">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/02.png" alt="">
-			<p>Linus</p>
-		</div>
-		<div class="home_block2_item block_item">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/03.png" alt="">
-			<p>Bonus</p>
-		</div>
-
+		<?php
+		    $gallery = get_field('gallery');
+			foreach($gallery as $row){
+				echo '<div class="home_block2_item block_item">
+				<img src="'.$row['url'].'" alt="">
+				<p>'.$row['title'].'</p>
+			</div>';
+			}
+		?>
 	</div>
 	<!-- block2 -->
 	<!-- block3 -->
 	<div class="home_block3 home_block">
 		<div class="block1 block_item">
-			<div class="row1"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/05.png" alt=""></div>
-			<div class="row2">Planning to own a ragdoll cat? <br>
-You are in the right place.</div>
-			<div class="row3"><button class="cat_btn">kittens</button></div>
+			<div class="row1"><img src="<?php echo get_field('kittents_img');?>" alt=""></div>
+			<div class="row2"><?php echo get_field('kittents_title');?></div>
+			<div class="row3"><a href="<?php echo home_url().'/index.php/cats'?>"><button class="cat_btn">kittens</button></a></div>
 		</div>
 		<div class="block2 JosefinSlab block_item">
-		At DreamPurr, we are more than just a cattery; we are a family dedicated to raising, nurturing, and loving these magnificent cats. Each Ragdoll cat and kitten in our care is a cherished member of our extended family, receiving the utmost attention and affection to ensure they grow up healthy, happy, and ready to become a loving addition to your home.
-<br>Our mission at DreamPurr is to match our beautiful Ragdolls with families who will love and cherish them as much as we do. We pride ourselves on our ethical breeding practices, our focus on health and socialization, and our dedication to educating future Ragdoll parents about this wonderful breed.
-		</div>
+		<?php echo get_field('kittents_des');?></div>
 	</div>
 	<!-- block3 -->
 
@@ -54,6 +48,7 @@ You are in the right place.</div>
 	<div class="home_block4 home_block ">
 		<div class="block1 block_item swiper-container">
 			<div class="swiper-wrapper">
+
 				<div class="swpier_item swiper-slide">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/06.png" alt="">
 					<div class="home_block4_img_word">
@@ -87,7 +82,7 @@ You are in the right place.</div>
 			</div>
 		</div>
 		<div class="pagination"></div>
-		<div class="block2 block_item"><button class="cat_btn">Blog</button></div>
+		<div class="block2 block_item"><a href="<?php echo home_url().'/index.php/blog'?>"><button class="cat_btn">Blog</button></a></div>
 	</div>
 	<!-- block4 -->
 </div>
