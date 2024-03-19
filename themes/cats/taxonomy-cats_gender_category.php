@@ -4,7 +4,7 @@
 <!-- Custom post type cats category gender Page 
 ==========================================-->
 <div class="kittents">
-<div class="layout" style="width:1250px">
+<div class="layout">
 <div class="cats_list_menu" style="">
 
 <?php

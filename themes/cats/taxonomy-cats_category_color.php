@@ -6,8 +6,8 @@
 <div class="kittents">
   
 
-<div class="layout" style="width:1250px">
-<div class="cats_list_menu" style="display:flex;justify-content:space-between;align-items:center">
+<div class="layout">
+<div class="cats_list_menu">
 <?php
     $term = get_queried_object();
    
@@ -66,7 +66,7 @@
 </div>
 <div class="layout">
 
-<div id="cats_lists" style="">
+<div class="cats_lists" style="">
           <?php
            $args = array( 'post_type' => 'cats', 'posts_per_page' => -1, 'order'=>'asc','tax_query' => array(
             'relation' => 'AND',
