@@ -48,8 +48,28 @@ get_header();
 	<div class="home_block4 home_block ">
 		<div class="block1 block_item swiper-container">
 			<div class="swiper-wrapper">
+ <!-- WP_Query：Get cats post list data -->
+ <?php
+            $args = array('post_type' => 'post', 'posts_per_page' => 10, 'order' => 'asc');
+            $loop = new WP_Query($args);
+          ?>
 
-				<div class="swpier_item swiper-slide">
+          <?php while ($loop->have_posts()): $loop->the_post(); ?>
+
+		         
+		          <div class="swpier_item swiper-slide">
+				  <?php if (has_post_thumbnail()) {the_post_thumbnail();} ?>
+					<div class="home_block4_img_word">
+					<?php the_title();?>
+					</div>
+				</div>
+                <?php endwhile; ?>
+
+        </div>
+<!-- WP_Query：Get cats post list data -->
+				
+
+				<!-- <div class="swpier_item swiper-slide">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/06.png" alt="">
 					<div class="home_block4_img_word">
 					A guide to entering the world of<br> breeding & showing cats
@@ -72,13 +92,7 @@ get_header();
 					<div class="home_block4_img_word">
 					A guide to entering the world of<br> breeding & showing cats
 					</div>
-				</div>
-				<div class="swpier_item swiper-slide">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/home/06.png" alt="">
-					<div class="home_block4_img_word">
-					A guide to entering the world of<br> breeding & showing cats
-					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 		<div class="pagination"></div>

@@ -21,7 +21,7 @@
 .page_404_btn{
     margin-top:50px
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1000px) {
     .page_404_block{
         flex-flow:column wrap;
         min-width: 100%;

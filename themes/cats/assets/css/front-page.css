@@ -1,5 +1,5 @@
 .home_page {
-    width: 1100px;
+    max-width: 1100px;
     padding:90px 0px 0px
 }
 .banner_right{
@@ -138,9 +138,12 @@
 .home_block4 .block2{
     margin-top: 15px;
 }
+.home_block4_img_word{
+    box-sizing: border-box;
+    padding-right:200px;
+}
 
-
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1000px) {
     body{
         box-sizing: border-box;
         overflow-x: hidden !important;
@@ -151,7 +154,16 @@
     .phone{
         display: block;
     }
-    
+    .banner_left{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .banner_right{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
     .layout{
         gap: 0;
         width:100%;
@@ -217,7 +229,7 @@
     }
     .home_block4_img_word{
         font-size: 18px;
-        bottom: auto;
+        bottom:0px
     }
     .home_block4 .swiper-container{
         
@@ -234,5 +246,15 @@
     .search_icon img{
         margin-left: 0px;
     }
-    
+    .home_block4_img_word{
+        box-sizing: border-box;
+        padding-right:15px;
+    }
+    .pagination{
+        margin-bottom:10px;
+    }
+    .home_block4{
+        padding-bottom:0px;
+    }
+   
 }
