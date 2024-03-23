@@ -28,7 +28,16 @@
         <div class="layout">
             <div class="header" style="">
               <div class="header_left flex ai_b">
-                <img src="<?php echo get_field('logo','option');?>" class="logo" alt="">
+<?php
+  $custom_logo_id = get_theme_mod( 'custom_logo' );
+  $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+  if ( has_custom_logo() ) {
+    echo '<img src="' . esc_url( $logo[0] ) . '" class="logo" alt="' . get_bloginfo( 'name' ) . '">';
+  } else {
+    echo '<h1>' . get_bloginfo('name') . '</h1>';
+  }
+?>
+                <!-- <img src="<?php echo get_field('logo','option');?>" class="logo" alt=""> -->
                 <div class="flex header_icons_group">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/01.png" alt="">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/02.png" alt="">
