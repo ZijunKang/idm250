@@ -194,13 +194,7 @@ function themename_custom_logo_setup() {
 	);
 	add_theme_support( 'custom-logo', $defaults );
 }
-function themename_custom_colors_setup() {
-	$defaults = array(
-
-	);
-	add_theme_support( 'custom-colors', $defaults );
-}
-add_action( 'after_setup_theme', 'themename_custom_colors_setup' );
+add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
 
 
 
